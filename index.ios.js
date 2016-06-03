@@ -15,8 +15,11 @@ var Weekdays = React.createClass ({
       <Text style={styles.textStyle}>
         Days of the week:
       </Text>
-      <DayItem />
+      <DayItem day={DAYS[0]} />
     </View>
+  },
+  days: function(){
+    
   }
 });
 
