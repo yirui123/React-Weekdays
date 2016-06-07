@@ -23,13 +23,13 @@ var Weekdays = React.createClass ({
     // });
     var daysItems = [];
 
-    for (var i = 0; i < 7; i++) {
+    for (var i = 1; i < 8; i++) {
       var day = Moment().add(i, 'days').format('dddd');
       daysItems.push(
         <DayItem day={day} daysUntil={i} />
       )
     }
-    
+
     return daysItems
   }
 });

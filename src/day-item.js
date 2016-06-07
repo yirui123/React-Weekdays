@@ -20,11 +20,11 @@ var DayItem = React.createClass ({
   },
   color: function () {
     var opacity = 1 / this.props.daysUntil;
-    return 'rgba(0, 0, 0, '+ opacity + ')';
+    return 'rgba(0, 0, 0, '+ opacity.toString() + ')';
   },
   fontWeight: function() {
-    var weight = 7 - this.props.daysUntil;
-    return weight * 100;
+    var weight = 8 - this.props.daysUntil;
+    return (weight * 100).toString();
   },
   fontSize: function() {
     return 60 - 6 * this.props.daysUntil;
